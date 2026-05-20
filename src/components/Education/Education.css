@@ -55,14 +55,14 @@
 }
 
 .edu-degree {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 0.3rem;
 }
 
 .edu-institution {
-  font-size: 0.875rem;
+  font-size: 0.975rem;
   color: var(--text-secondary);
   margin-bottom: 1.25rem;
 }
@@ -75,7 +75,7 @@
 }
 
 .edu-notes li {
-  font-size: 0.825rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
   padding-left: 1rem;
   position: relative;
@@ -94,7 +94,7 @@
 
 /* ─── Certifications ─── */
 .cert-heading {
-  font-size: 0.68rem;
+  font-size: 0.9rem;
   letter-spacing: 0.12em;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -129,14 +129,14 @@
 }
 
 .cert-name {
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--text-primary);
   line-height: 1.4;
 }
 
 .cert-status {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   padding: 0.15rem 0.55rem;
   border-radius: 4px;
   white-space: nowrap;
@@ -177,7 +177,7 @@
 }
 
 .cert-relevance {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
   line-height: 1.5;
 }

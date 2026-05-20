@@ -38,7 +38,7 @@ export default function Hero() {
           <span className="hero-sep">·</span>
           <a
             href="https://github.com"
-            target="_blank"
+            target="_blank" 
             rel="noreferrer"
             className="hero-meta-link"
           >

@@ -37,7 +37,7 @@
 }
 
 .skill-group-title {
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -50,7 +50,7 @@
 }
 
 .skill-item {
-  font-size: 0.82rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
   display: flex;
   align-items: center;

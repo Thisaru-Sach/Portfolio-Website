@@ -13,7 +13,7 @@
 }
 
 .about-body {
-  font-size: 0.975rem;
+  font-size: 1.2rem;
   color: var(--text-secondary);
   line-height: 1.75;
   margin-bottom: 1rem;
@@ -51,7 +51,7 @@
 }
 
 .stat-label {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   line-height: 1.4;
 }

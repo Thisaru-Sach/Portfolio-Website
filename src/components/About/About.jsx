@@ -13,14 +13,14 @@ export default function About() {
             </h2>
             <p className="about-body reveal d1">
               Final-year Statistics undergraduate at USJP with hands-on experience shipping
-              production full-stack systems — REST APIs, cloud infra, auth flows, and polished UIs.
+              production full-stack systems - REST APIs, cloud infra, auth flows, and polished UIs.
             </p>
             <p className="about-body reveal d2">
               Drawn to where technology meets financial data. Building reliable, high-throughput
-              systems for platforms like LSEG's is exactly where I want to grow.
+              systems for global platforms is exactly where I want to grow.
             </p>
             <p className="about-body reveal d3">
-              I care about code quality, system reliability, and data integrity — the three things
+              I care about code quality, system reliability, and data integrity - the three things
               that matter most at a financial data company.
             </p>
           </div>

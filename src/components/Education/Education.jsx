@@ -14,7 +14,7 @@ export default function Education() {
 
         <div className="edu-grid">
           {/* ── Academic ── */}
-          <div className="edu-block reveal d1">
+          <div className="edu-block reveal d1"> 
             <div className="edu-header">
               <span className="mono accent edu-num">01</span>
               <div>

@@ -55,7 +55,7 @@
 }
 
 .footer-logo {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: var(--text-primary);
   display: block;
@@ -63,7 +63,7 @@
 }
 
 .footer-tagline {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
 }
 
@@ -75,7 +75,7 @@
 }
 
 .footer-nav-link {
-  font-size: 0.82rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   text-decoration: none;
   transition: color var(--transition);
@@ -95,7 +95,7 @@
 }
 
 .footer-copy {
-  font-size: 0.68rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   letter-spacing: 0.05em;
 }
@@ -107,7 +107,7 @@
 
 .footer-social-link {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 1.2rem;
   color: var(--text-muted);
   text-decoration: none;
   transition: color var(--transition);

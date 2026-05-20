@@ -49,14 +49,14 @@
 }
 
 .project-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-primary);
   margin-bottom: 0.2rem;
 }
 
 .project-role {
-  font-size: 0.68rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   letter-spacing: 0.05em;
 }
@@ -71,7 +71,7 @@
 }
 
 .tech-chip {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
   background: var(--bg-surface);
   border: 1px solid var(--border);
@@ -90,7 +90,7 @@
 
 .project-link {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.875rem;
   color: var(--text-muted);
   text-decoration: none;
   transition: color var(--transition);
@@ -138,7 +138,7 @@
 }
 
 .preview-caption {
-  font-size: 0.68rem;
+  font-size: 1.0rem;
   color: var(--text-muted);
   padding: 0.75rem;
   line-height: 1.5;

@@ -18,7 +18,7 @@ export default function Footer() {
               <span className="accent">T</span>S
             </span>
             <p className="footer-tagline">
-              Software Engineer · Statistics · USJP
+              Software Engineer · Computer Science · USJP
             </p>
           </div>
 
@@ -33,7 +33,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p className="footer-copy mono">
-            © {new Date().getFullYear()} Thisaru Sachintha. Built with React & Vite.
+            © {new Date().getFullYear()} Thisaru Sachintha.
           </p>
           <div className="footer-social">
             <a href="https://github.com"   target="_blank" rel="noreferrer" className="footer-social-link">GitHub ↗</a>

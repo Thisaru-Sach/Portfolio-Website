@@ -15,7 +15,7 @@ export default function Skills() {
       <div className="container">
         <p className="section-label reveal">Technical Skills</p>
         <h2 className="section-title reveal">
-          Capabilities aligned<br />with LSEG&apos;s tech stack
+          Capabilities<br />
         </h2>
 
         <div className="skills-grid">
