@@ -12,7 +12,6 @@
   align-items: start;
 }
 
-/* ─── Academic block ─── */
 .edu-block {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -47,7 +46,6 @@
   border-radius: 4px;
   margin-top: 0.3rem;
 }
-
 .edu-badge--active {
   background: rgba(91, 141, 238, 0.12);
   color: var(--accent);
@@ -55,14 +53,14 @@
 }
 
 .edu-degree {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 0.3rem;
 }
 
 .edu-institution {
-  font-size: 0.975rem;
+  font-size: 0.9rem;
   color: var(--text-secondary);
   margin-bottom: 1.25rem;
 }
@@ -75,15 +73,14 @@
 }
 
 .edu-notes li {
-  font-size: 1.1rem;
+  font-size: 0.93rem;
   color: var(--text-secondary);
   padding-left: 1rem;
   position: relative;
   line-height: 1.6;
 }
-
 .edu-notes li::before {
-  content: '→';
+  content: "→";
   position: absolute;
   left: 0;
   color: var(--accent);
@@ -92,9 +89,9 @@
   top: 2px;
 }
 
-/* ─── Certifications ─── */
+/* Certifications */
 .cert-heading {
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   letter-spacing: 0.12em;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -112,9 +109,10 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.1rem 1.25rem;
-  transition: border-color var(--transition), background var(--transition);
+  transition:
+    border-color var(--transition),
+    background var(--transition);
 }
-
 .cert-card:hover {
   border-color: var(--border-hover);
   background: var(--bg-card-hover);
@@ -129,40 +127,36 @@
 }
 
 .cert-name {
-  font-size: 1.1rem;
+  font-size: 0.98rem;
   font-weight: 500;
   color: var(--text-primary);
   line-height: 1.4;
 }
 
 .cert-status {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   padding: 0.15rem 0.55rem;
   border-radius: 4px;
   white-space: nowrap;
   flex-shrink: 0;
   border: 1px solid transparent;
+  font-family: var(--font-mono);
 }
-
-/* Status variants */
 .cert-status--in-progress {
   background: rgba(200, 160, 60, 0.1);
   color: #c8a03c;
   border-color: rgba(200, 160, 60, 0.2);
 }
-
 .cert-status--completed {
   background: rgba(60, 180, 100, 0.1);
   color: #3cb464;
   border-color: rgba(60, 180, 100, 0.2);
 }
-
 .cert-status--production-experience {
   background: rgba(91, 141, 238, 0.12);
   color: var(--accent);
   border-color: rgba(91, 141, 238, 0.25);
 }
-
 .cert-status--self-study {
   background: rgba(150, 100, 200, 0.1);
   color: #9664c8;
@@ -171,18 +165,46 @@
 
 .cert-issuer {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   color: var(--text-muted);
   margin-bottom: 0.35rem;
 }
 
 .cert-relevance {
-  font-size: 1.1rem;
+  font-size: 0.88rem;
   color: var(--text-secondary);
   line-height: 1.5;
 }
 
-/* ─── Responsive ─── */
+/* ─── Tablet ─── */
 @media (max-width: 900px) {
-  .edu-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .edu-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 480px) {
+  .education-section {
+    padding: 5rem 0;
+  }
+  .edu-block {
+    padding: 1.25rem;
+  }
+  .edu-degree {
+    font-size: 1.05rem;
+  }
+  .cert-card {
+    padding: 0.9rem 1rem;
+  }
+
+  /* stack cert-top on narrow screens if name is long */
+  .cert-top {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .cert-status {
+    align-self: flex-start;
+  }
 }

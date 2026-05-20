@@ -5,7 +5,6 @@
   overflow: hidden;
 }
 
-/* ─── Horizon line — the glowing "ground" ─── */
 .footer-horizon {
   position: absolute;
   top: 0;
@@ -14,16 +13,15 @@
   height: 1px;
   background: linear-gradient(
     90deg,
-    transparent      0%,
-    rgba(91,141,238, 0.3) 20%,
-    rgba(180,140,90, 0.25) 50%,   /* warm amber shift at centre */
-    rgba(91,141,238, 0.3) 80%,
-    transparent      100%
+    transparent 0%,
+    rgba(91, 141, 238, 0.3) 20%,
+    rgba(180, 140, 90, 0.25) 50%,
+    rgba(91, 141, 238, 0.3) 80%,
+    transparent 100%
   );
   filter: blur(0.5px);
 }
 
-/* ─── Atmosphere — warm glow rising from the "ground" ─── */
 .footer-atmosphere {
   position: absolute;
   top: 0;
@@ -40,7 +38,6 @@
   pointer-events: none;
 }
 
-/* ─── Content ─── */
 .footer-inner {
   position: relative;
   z-index: 1;
@@ -63,7 +60,7 @@
 }
 
 .footer-tagline {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
 }
 
@@ -75,15 +72,15 @@
 }
 
 .footer-nav-link {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
   text-decoration: none;
   transition: color var(--transition);
 }
+.footer-nav-link:hover {
+  color: var(--text-secondary);
+}
 
-.footer-nav-link:hover { color: var(--text-secondary); }
-
-/* ─── Bottom bar ─── */
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -95,7 +92,7 @@
 }
 
 .footer-copy {
-  font-size: 1.1rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
   letter-spacing: 0.05em;
 }
@@ -107,17 +104,31 @@
 
 .footer-social-link {
   font-family: var(--font-mono);
-  font-size: 1.2rem;
+  font-size: 0.875rem;
   color: var(--text-muted);
   text-decoration: none;
   transition: color var(--transition);
 }
+.footer-social-link:hover {
+  color: var(--accent);
+}
 
-.footer-social-link:hover { color: var(--accent); }
-
-/* ─── Responsive ─── */
+/* ─── Mobile ─── */
 @media (max-width: 600px) {
-  .footer-top  { flex-direction: column; }
-  .footer-nav  { justify-content: flex-start; }
-  .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .footer {
+    padding: 3.5rem 0 2rem;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .footer-nav {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

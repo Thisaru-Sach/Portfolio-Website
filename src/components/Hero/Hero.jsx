@@ -2,17 +2,15 @@ import useReveal from '../../hooks/useReveal'
 import './Hero.css'
 
 export default function Hero() {
-  // Initialise the scroll-reveal observer for this page
   useReveal()
 
   return (
     <section id="hero" className="hero">
-      {/* Subtle horizon glow at the bottom of hero */}
       <div className="hero-horizon" aria-hidden="true" />
 
       <div className="container hero-inner">
         <p className="mono hero-tag reveal d1">
-          <span className="accent">01</span> - Software Engineer & Computer Science Undergraduate
+          <span className="accent">01</span> — Statistics Undergraduate & Full-Stack Developer
         </p>
 
         <h1 className="hero-name reveal d2">
@@ -21,9 +19,9 @@ export default function Hero() {
         </h1>
 
         <p className="hero-sub reveal d3">
-          Final-year Computer Science undergraduate at USJP. Building production full-stack systems
-          across finance, data, and cloud. Seeking a Software Engineering Internship at&nbsp;
-          <span className="accent">LSEG</span>.
+          Final-year Statistics undergraduate at USJP. Building production full-stack systems
+          across data, cloud, and security. Passionate about AI, cybersecurity, and software
+          engineering beyond the classroom.
         </p>
 
         <div className="hero-actions reveal d4">
@@ -34,11 +32,11 @@ export default function Hero() {
         <div className="hero-meta mono reveal d5">
           <span>Colombo, Sri Lanka</span>
           <span className="hero-sep">·</span>
-          <span>Open to internships</span>
+          <span>Open to opportunities</span>
           <span className="hero-sep">·</span>
           <a
-            href="https://github.com"
-            target="_blank" 
+            href="https://github.com/thisaru"
+            target="_blank"
             rel="noreferrer"
             className="hero-meta-link"
           >
@@ -46,7 +44,7 @@ export default function Hero() {
           </a>
           <span className="hero-sep">·</span>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/thisaru"
             target="_blank"
             rel="noreferrer"
             className="hero-meta-link"

@@ -1,15 +1,14 @@
 import { useState } from 'react'
 import './Contact.css'
 
-export default function Contact() { 
+export default function Contact() {
   const [form, setForm]     = useState({ name: '', email: '', message: '' })
-  const [status, setStatus] = useState('idle') // idle | sending | sent | error
+  const [status, setStatus] = useState('idle')
 
   const handleChange = (e) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  // Sends to Formspree — replace the action URL with your own endpoint
   const handleSubmit = async (e) => {
     e.preventDefault()
     setStatus('sending')
@@ -36,8 +35,8 @@ export default function Contact() {
         <p className="section-label reveal">Contact</p>
         <h2 className="section-title reveal">Let&apos;s connect</h2>
         <p className="contact-intro reveal d1">
-          I&apos;m actively looking for software engineering internship opportunities, particularly
-          at LSEG. If you&apos;d like to discuss my background or a potential role, reach out below.
+          I&apos;m open to internship opportunities, collaborations, and interesting projects.
+          Whether you want to talk software, data, or security — reach out below.
         </p>
 
         <div className="contact-grid">
@@ -51,13 +50,13 @@ export default function Contact() {
             </div>
             <div className="contact-info-item">
               <span className="mono accent contact-info-label">LinkedIn</span>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="contact-info-value">
+              <a href="https://linkedin.com/in/thisaru" target="_blank" rel="noreferrer" className="contact-info-value">
                 linkedin.com/in/thisaru ↗
               </a>
             </div>
             <div className="contact-info-item">
               <span className="mono accent contact-info-label">GitHub</span>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="contact-info-value">
+              <a href="https://github.com/thisaru" target="_blank" rel="noreferrer" className="contact-info-value">
                 github.com/thisaru ↗
               </a>
             </div>
@@ -109,7 +108,7 @@ export default function Contact() {
                 value={form.message}
                 onChange={handleChange}
                 required
-                placeholder="Tell me about the opportunity..."
+                placeholder="What's on your mind?"
                 rows={5}
               />
             </div>
@@ -122,7 +121,7 @@ export default function Contact() {
               {status === 'sending' ? 'Sending…' : 'Send Message'}
             </button>
 
-            {status === 'sent'  && <p className="form-feedback form-feedback--ok">Message sent - I&apos;ll be in touch soon.</p>}
+            {status === 'sent'  && <p className="form-feedback form-feedback--ok">Message sent — I&apos;ll be in touch soon.</p>}
             {status === 'error' && <p className="form-feedback form-feedback--err">Something went wrong. Email me directly instead.</p>}
           </form>
         </div>

@@ -2,11 +2,11 @@ import './Skills.css'
 
 const skillGroups = [
   { category: 'Languages',        tag: '01', items: ['Java', 'Python', 'JavaScript', 'SQL', 'R', 'Bash'] },
-  { category: 'Backend & APIs',   tag: '02', items: ['Spring Boot', 'Microservices', 'Node.js / Express', 'REST API Design', 'JWT & OAuth 2.0', 'Edge Functions'] },
+  { category: 'Backend & APIs',   tag: '02', items: ['Spring Boot', 'Microservices', 'Node.js / Express', 'REST API Design', 'JWT & OAuth 2.0', 'Supabase Edge Functions'] },
   { category: 'Frontend',         tag: '03', items: ['React 18', 'Vite', 'React Native (Expo)', 'HTML / CSS', 'Component Architecture'] },
-  { category: 'Data & Analytics', tag: '04', items: ['PostgreSQL', 'MongoDB Atlas', 'Statistical Modelling', 'Data Pipelines', 'Pandas / NumPy', 'Streamlit'] },
-  { category: 'Cloud & DevOps',   tag: '05', items: ['Supabase', 'Vercel', 'Docker (learning)', 'Eureka / API Gateway', 'Git / GitHub'] },
-  { category: 'Security',         tag: '06', items: ['Row-Level Security', 'API Key Hardening', 'RBAC', 'ISC2 CC (in progress)', 'Zero Trust concepts'] },
+  { category: 'Data & Analytics', tag: '04', items: ['PostgreSQL', 'MongoDB Atlas', 'Statistical Modelling', 'Pandas / NumPy', 'Streamlit', 'R (tidyverse)'] },
+  { category: 'Cloud & DevOps',   tag: '05', items: ['Supabase', 'Vercel', 'Docker (learning)', 'Eureka / API Gateway', 'Git / GitHub', 'Ollama (local LLMs)'] },
+  { category: 'Security',         tag: '06', items: ['Row-Level Security (RLS)', 'API Key Hardening', 'RBAC', 'ISC2 CC (in progress)', 'Zero Trust concepts', 'XSS / SQLi prevention'] },
 ]
 
 export default function Skills() {
@@ -14,9 +14,7 @@ export default function Skills() {
     <section id="skills" className="skills-section">
       <div className="container">
         <p className="section-label reveal">Technical Skills</p>
-        <h2 className="section-title reveal">
-          Capabilities<br />
-        </h2>
+        <h2 className="section-title reveal">Capabilities</h2>
 
         <div className="skills-grid">
           {skillGroups.map((g, i) => (

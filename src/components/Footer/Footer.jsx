@@ -5,10 +5,7 @@ const navLinks = ['About', 'Skills', 'Projects', 'Education', 'Contact']
 export default function Footer() {
   return (
     <footer className="footer" role="contentinfo">
-      {/* Horizon glow line — the "ground meets sky" effect */}
       <div className="footer-horizon" aria-hidden="true" />
-
-      {/* Warm horizon gradient wash */}
       <div className="footer-atmosphere" aria-hidden="true" />
 
       <div className="container footer-inner">
@@ -18,7 +15,7 @@ export default function Footer() {
               <span className="accent">T</span>S
             </span>
             <p className="footer-tagline">
-              Software Engineer · Computer Science · USJP
+              Statistics Undergraduate · Full-Stack Developer · USJP
             </p>
           </div>
 
@@ -36,8 +33,8 @@ export default function Footer() {
             © {new Date().getFullYear()} Thisaru Sachintha.
           </p>
           <div className="footer-social">
-            <a href="https://github.com"   target="_blank" rel="noreferrer" className="footer-social-link">GitHub ↗</a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="footer-social-link">LinkedIn ↗</a>
+            <a href="https://github.com/thisaru"   target="_blank" rel="noreferrer" className="footer-social-link">GitHub ↗</a>
+            <a href="https://linkedin.com/in/thisaru" target="_blank" rel="noreferrer" className="footer-social-link">LinkedIn ↗</a>
           </div>
         </div>
       </div>

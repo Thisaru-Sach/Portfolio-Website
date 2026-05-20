@@ -4,7 +4,6 @@
   padding: 7rem 0;
 }
 
-/* ─── Project rows ─── */
 .projects-list {
   display: flex;
   flex-direction: column;
@@ -34,11 +33,11 @@
   align-items: center;
 }
 
-/* Left block */
 .project-left {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+  min-width: 0; /* allow text truncation */
 }
 
 .project-num {
@@ -49,19 +48,19 @@
 }
 
 .project-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--text-primary);
   margin-bottom: 0.2rem;
+  line-height: 1.4;
 }
 
 .project-role {
-  font-size: 1.1rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
   letter-spacing: 0.05em;
 }
 
-/* Tech chips */
 .project-tech {
   display: flex;
   flex-wrap: wrap;
@@ -71,7 +70,7 @@
 }
 
 .tech-chip {
-  font-size: 0.9rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
   background: var(--bg-surface);
   border: 1px solid var(--border);
@@ -81,7 +80,6 @@
   white-space: nowrap;
 }
 
-/* Links */
 .project-links {
   display: flex;
   gap: 0.75rem;
@@ -90,15 +88,15 @@
 
 .project-link {
   font-family: var(--font-mono);
-  font-size: 0.875rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
   text-decoration: none;
   transition: color var(--transition);
 }
+.project-link:hover {
+  color: var(--accent);
+}
 
-.project-link:hover { color: var(--accent); }
-
-/* Description — hidden on desktop (shown in preview), visible on mobile tap */
 .project-desc {
   font-size: 0.875rem;
   color: var(--text-secondary);
@@ -106,17 +104,19 @@
   margin-top: 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, margin-top 0.3s ease, opacity 0.3s ease;
+  transition:
+    max-height 0.4s ease,
+    margin-top 0.3s ease,
+    opacity 0.3s ease;
   opacity: 0;
 }
-
 .project-desc--visible {
-  max-height: 200px;
+  max-height: 300px;
   margin-top: 1rem;
   opacity: 1;
 }
 
-/* ─── Floating desktop preview ─── */
+/* Desktop floating preview */
 .project-preview {
   position: fixed;
   z-index: 200;
@@ -129,48 +129,90 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
   animation: previewIn 0.2s ease;
 }
-
 .project-preview img {
   width: 100%;
   height: 170px;
   object-fit: cover;
   display: block;
 }
-
 .preview-caption {
-  font-size: 1.0rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
   padding: 0.75rem;
   line-height: 1.5;
 }
 
 @keyframes previewIn {
-  from { opacity: 0; transform: scale(0.96); }
-  to   { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-/* ─── Responsive ─── */
+/* ─── Tablet (≤900px) ─── */
 @media (max-width: 900px) {
   .project-row-inner {
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
 
-  .project-tech { justify-content: flex-start; }
+  .project-tech {
+    justify-content: flex-start;
+  }
 
-  /* Show description on hover since preview doesn't appear on tablet */
   .project-row:hover .project-desc,
   .project-desc--visible {
-    max-height: 200px;
+    max-height: 300px;
     margin-top: 1rem;
     opacity: 1;
   }
 
-  /* Hide floating preview on touch devices */
-  .project-preview { display: none; }
+  .project-preview {
+    display: none;
+  }
 }
 
+/* ─── Mobile (≤480px) ─── */
 @media (max-width: 480px) {
-  .project-title { font-size: 0.95rem; }
-  .project-links { flex-wrap: wrap; }
+  .projects-section {
+    padding: 5rem 0;
+  }
+
+  .project-row {
+    padding: 1.25rem 0;
+  }
+
+  .project-title {
+    font-size: 0.95rem;
+  }
+
+  .project-role {
+    font-size: 0.75rem;
+  }
+
+  .project-left {
+    gap: 0.65rem;
+  }
+
+  .tech-chip {
+    font-size: 0.68rem;
+    padding: 0.15rem 0.45rem;
+  }
+
+  .project-links {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .project-link {
+    font-size: 0.78rem;
+  }
+
+  .project-desc {
+    font-size: 0.82rem;
+  }
 }
