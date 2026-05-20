@@ -1,0 +1,176 @@
+.projects-section {
+  position: relative;
+  z-index: 1;
+  padding: 7rem 0;
+}
+
+/* ─── Project rows ─── */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-row {
+  border-bottom: 1px solid var(--border);
+  padding: 1.75rem 0;
+  cursor: pointer;
+  transition: background var(--transition);
+  position: relative;
+}
+
+.project-row:hover,
+.project-row:focus-visible {
+  background: rgba(91, 141, 238, 0.04);
+  outline: none;
+}
+
+.project-row-inner {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Left block */
+.project-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.project-num {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  padding-top: 3px;
+  flex-shrink: 0;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.project-role {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* Tech chips */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.tech-chip {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+/* Links */
+.project-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.project-link {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.project-link:hover { color: var(--accent); }
+
+/* Description — hidden on desktop (shown in preview), visible on mobile tap */
+.project-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, margin-top 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.project-desc--visible {
+  max-height: 200px;
+  margin-top: 1rem;
+  opacity: 1;
+}
+
+/* ─── Floating desktop preview ─── */
+.project-preview {
+  position: fixed;
+  z-index: 200;
+  width: 280px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  pointer-events: none;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  animation: previewIn 0.2s ease;
+}
+
+.project-preview img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.preview-caption {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  padding: 0.75rem;
+  line-height: 1.5;
+}
+
+@keyframes previewIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .project-row-inner {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .project-tech { justify-content: flex-start; }
+
+  /* Show description on hover since preview doesn't appear on tablet */
+  .project-row:hover .project-desc,
+  .project-desc--visible {
+    max-height: 200px;
+    margin-top: 1rem;
+    opacity: 1;
+  }
+
+  /* Hide floating preview on touch devices */
+  .project-preview { display: none; }
+}
+
+@media (max-width: 480px) {
+  .project-title { font-size: 0.95rem; }
+  .project-links { flex-wrap: wrap; }
+}

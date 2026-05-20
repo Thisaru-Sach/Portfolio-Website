@@ -1,0 +1,86 @@
+.stars-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    #03060f 0%,
+    #05091a 40%,
+    #070b18 75%,
+    #040711 100%
+  );
+}
+
+/* ─── Individual stars ─── */
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  animation: twinkle var(--dur, 4s) ease-in-out infinite;
+}
+
+/* Depth layers — farther stars are dimmer */
+.star.layer-0 { opacity: 0.9; }
+.star.layer-1 { opacity: 0.55; }
+.star.layer-2 { opacity: 0.28; }
+
+@keyframes twinkle {
+  0%, 100% { opacity: var(--base-op, 0.7); transform: scale(1); }
+  50%       { opacity: 0.1;                 transform: scale(0.7); }
+}
+
+/* ─── Nebula blobs ─── */
+.nebula {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.nebula-1 {
+  width: 500px;
+  height: 300px;
+  top: 5%;
+  left: 60%;
+  background: radial-gradient(ellipse, rgba(91,141,238,0.07) 0%, transparent 70%);
+}
+
+.nebula-2 {
+  width: 400px;
+  height: 250px;
+  top: 35%;
+  left: -5%;
+  background: radial-gradient(ellipse, rgba(120,80,200,0.05) 0%, transparent 70%);
+}
+
+.nebula-3 {
+  width: 600px;
+  height: 350px;
+  top: 65%;
+  left: 40%;
+  background: radial-gradient(ellipse, rgba(60,120,200,0.06) 0%, transparent 70%);
+}
+
+/* ─── Shooting stars ─── */
+.shooting-star {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0) 100%);
+  border-radius: 1px;
+  animation: shoot linear infinite;
+  opacity: 0;
+}
+
+.s1 { width: 120px; top: 12%; left: 20%; animation-duration: 8s;  animation-delay: 2s; }
+.s2 { width: 90px;  top: 28%; left: 55%; animation-duration: 11s; animation-delay: 5s; }
+.s3 { width: 140px; top: 8%;  left: 70%; animation-duration: 14s; animation-delay: 9s; }
+
+@keyframes shoot {
+  0%   { transform: translateX(0)    translateY(0)   rotate(-20deg); opacity: 0; }
+  5%   { opacity: 1; }
+  30%  { opacity: 0.4; }
+  40%  { transform: translateX(300px) translateY(80px) rotate(-20deg); opacity: 0; }
+  100% { transform: translateX(300px) translateY(80px) rotate(-20deg); opacity: 0; }
+}
