@@ -36,7 +36,7 @@ export default function Contact() {
         <h2 className="section-title reveal">Let&apos;s connect</h2>
         <p className="contact-intro reveal d1">
           I&apos;m open to internship opportunities, collaborations, and interesting projects.
-          Whether you want to talk software, data, or security — reach out below.
+          Whether you want to talk software, data, or security - reach out below.
         </p>
 
         <div className="contact-grid">
@@ -51,13 +51,13 @@ export default function Contact() {
             <div className="contact-info-item">
               <span className="mono accent contact-info-label">LinkedIn</span>
               <a href="https://linkedin.com/in/thisaru" target="_blank" rel="noreferrer" className="contact-info-value">
-                linkedin.com/in/thisaru ↗
+                linkedin.com/in/thisaru sachintha
               </a>
             </div>
             <div className="contact-info-item">
               <span className="mono accent contact-info-label">GitHub</span>
               <a href="https://github.com/thisaru" target="_blank" rel="noreferrer" className="contact-info-value">
-                github.com/thisaru ↗
+                github.com/thisaru-sach 
               </a>
             </div>
             <div className="contact-info-item">

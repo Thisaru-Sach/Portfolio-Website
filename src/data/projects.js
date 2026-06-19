@@ -1,10 +1,10 @@
 export const projects = [
   {
     id: 1,
-    title: 'DataXplore 2.0 — Inter-University Analytics Competition',
+    title: 'DataXplore 2.0 - Inter-University Data Analytics Competition',
     tag: '01',
     description:
-      'Full-stack competition platform for the USJP Statistics Society. Built with React/Vite, Supabase, and Vercel — covering NIC+email authentication via Edge Functions, drag-and-drop file submissions (JSZip), an admin dashboard, phase-driven config system, and a Top 10 Teams reveal. Handled a security incident with API key rotation and RLS hardening.',
+      'Full-stack competition platform for the USJP Statistics Society. Built with React/Vite, Supabase, and Vercel - covering NIC+email authentication via Edge Functions, drag-and-drop file submissions (JSZip), an admin dashboard, phase-driven config system, and a Top 10 Teams reveal. Handled a security incident with API key rotation and RLS hardening.',
     tech: ['React', 'Vite', 'Supabase', 'Vercel', 'PostgreSQL'],
     role: 'Full-Stack Developer',
     github: 'https://github.com/thisaru',
@@ -13,7 +13,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'AlgoAttendance — QR-Based Attendance System',
+    title: 'AlgoAttendance - QR-Based Attendance System',
     tag: '02',
     description:
       'Migrated a Node.js/Express + web frontend attendance system to React Native (Expo) with MongoDB Atlas. Fixed a critical encryption key bug (keys were regenerated on every server restart), implemented base64 QR image delivery, and resolved Atlas IP whitelisting for dynamic hotspot IPs.',
@@ -25,7 +25,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'EcoBridge — Circular Economy Marketplace',
+    title: 'EcoBridge - Circular Economy Marketplace',
     tag: '03',
     description:
       'Spring Boot microservices marketplace for circular economy trading. Covers React 18 frontend, JWT/Zero Trust auth, RBAC, XSS/SQLi prevention, SSE notifications, Eureka service discovery, and API Gateway — built as a combined learning and production-delivery project over a nine-week roadmap.',
@@ -37,7 +37,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: 'Certificate Generator — Workshop Tool',
+    title: 'Certificate Generator - Workshop Tool',
     tag: '04',
     description:
       'Streamlit app for bulk certificate generation and email delivery. Handles PDF stamping, Gmail SMTP, and CSV batch processing — deployed on a Windows machine with a Device Guard workaround. Used to issue certificates for the DataXplore workshop participants.',

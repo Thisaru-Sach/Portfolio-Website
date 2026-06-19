@@ -15,7 +15,7 @@ export default function Footer() {
               <span className="accent">T</span>S
             </span>
             <p className="footer-tagline">
-              Statistics Undergraduate · Full-Stack Developer · USJP
+              Computer Science Undergraduate · Full-Stack Developer · USJP
             </p>
           </div>
 

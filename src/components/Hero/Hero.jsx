@@ -10,7 +10,7 @@ export default function Hero() {
 
       <div className="container hero-inner">
         <p className="mono hero-tag reveal d1">
-          <span className="accent">01</span> — Statistics Undergraduate & Full-Stack Developer
+           Computer Science Undergraduate & Full-Stack Developer
         </p>
 
         <h1 className="hero-name reveal d2">
@@ -19,7 +19,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero-sub reveal d3">
-          Final-year Statistics undergraduate at USJP. Building production full-stack systems
+          Final-year Computer Science undergraduate at USJP. Building production full-stack systems
           across data, cloud, and security. Passionate about AI, cybersecurity, and software
           engineering beyond the classroom.
         </p>
@@ -35,7 +35,7 @@ export default function Hero() {
           <span>Open to opportunities</span>
           <span className="hero-sep">·</span>
           <a
-            href="https://github.com/thisaru"
+            href="https://github.com/thisaru-sach"
             target="_blank"
             rel="noreferrer"
             className="hero-meta-link"
