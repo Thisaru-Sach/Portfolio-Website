@@ -43,7 +43,7 @@ export default function Navbar() {
       <div className="container navbar-inner">
         {/* Logo / name */}
         <a href="#hero" className="navbar-logo mono" onClick={close}>
-          <span className="accent">T</span>S
+          <span className="accent">T</span>hisaru{" "}<span className="accent">S</span>achintha
         </a>
 
         {/* Desktop links */}

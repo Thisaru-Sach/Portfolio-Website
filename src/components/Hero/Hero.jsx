@@ -10,7 +10,7 @@ export default function Hero() {
 
       <div className="container hero-inner">
         <p className="mono hero-tag reveal d1">
-           Computer Science Undergraduate & Full-Stack Developer
+           Thisaru Sachintha | Computer Science Undergraduate
         </p>
 
         <h1 className="hero-name reveal d2">
