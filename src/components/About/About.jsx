@@ -13,7 +13,7 @@ export default function About() {
             </h2>
             <p className="about-body reveal d1">
               Final-year Statistics undergraduate at USJP with hands-on experience shipping
-              production full-stack systems — REST APIs, cloud infrastructure, auth flows, and
+              production full-stack systems - REST APIs, cloud infrastructure, auth flows, and
               polished UIs built end-to-end.
             </p>
             <p className="about-body reveal d2">
