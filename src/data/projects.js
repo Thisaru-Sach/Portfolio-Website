@@ -47,7 +47,7 @@ export const projects = [
     'Full-stack document management platform for secure uploading, organizing, and managing files. Features a React frontend, Express backend, complete Docker containerization, and automated build-and-push GitHub Actions CI/CD pipelines.',
   tech: ['React', 'Bootstrap', 'Node.js', 'Express', 'Docker', 'GitHub Actions'],
   role: 'Full-Stack & DevOps Engineer',
-  github: 'https://github.com/Thisaru-Sach',
+  github: 'https://github.com/Thisaru-Sach/EasyDoc',
   live: null,
   image: easydoc,
 },
